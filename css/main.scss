@@ -1,6 +1,6 @@
 $bkgcolor:#F4F4F4;
 $innercolor: #EEEDEB;
-$title-text-size: 5vh;
+$title-text-size: 4vw;
 
 body{
     background-color: $bkgcolor;
@@ -21,7 +21,9 @@ body{
             background-color: $innercolor;
             border: white solid 15px;  
             height: 60vw;
-            width: 80vw;          
+            width: 80vw;   
+            box-shadow: 0 4px 5px -6px black;
+       
 
             .card{
                 height:40%;
@@ -31,9 +33,38 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
                 .card-title{
-                    font-size: $title-text-size
+                    width: 50%;
+                    text-align: center;
+                    font-size: $title-text-size;
+                    color: $bkgcolor;
+                    background-color: rgba($color: #000000, $alpha: .5);
+                    font-weight:600;
+                    text-shadow: 0px 0px 3px #000;
+
                 }
+            }
+            #shows{
+                background: url(https://images.pexels.com/photos/878998/pexels-photo-878998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+                background-size: cover;
+            }
+
+            #bio{
+                background: url(https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Waax_band_2018.jpg/800px-Waax_band_2018.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            #merch{
+                background: url(https://live.staticflickr.com/2371/2356320632_0f10fa447e_b.jpg);
+                background-position: center;
+            }
+
+            #photos{
+                background: url(https://www.goodfreephotos.com/albums/united-states/california/other/rocky-shoreline-landscape-in-big-sur-california.jpg);
+                background-position: center;
+                background-size: cover;
             }
 
             .card-center{
@@ -46,12 +77,57 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: aqua;
+                background: url(https://cdn.pixabay.com/photo/2015/03/26/10/25/trees-691292_960_720.jpg);
+                background-size: cover;
+                cursor: pointer;
                 .card-title{
                     font-size: $title-text-size;
+                    font-weight:600;
+                    text-shadow: 0px 0px 3px #000;
+                    color: $bkgcolor;
+                    text-align: center;
                 }
             }
         }
+        .sub-container{
+            margin: 2vh 10vw;
+            width: 80vw;   
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: black solid 1px;
+    
+            .sub-title{
+                border-bottom:black 2px solid;
+            }
+    
+            .icons{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+        .bottom-container{
+            width: 100%;
+            margin: 2vh 10vw;
+            display: flex;
+            justify-content: center;    
+    
+            .tour-dates{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 80vw;
+                list-style: none;
+                border: rgb(255, 255, 255) 15px solid;
+                box-shadow: 0 4px 5px -6px black;
+            }
+        }
     }
+
+    
 }
 
