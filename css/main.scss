@@ -1,6 +1,14 @@
 $bkgcolor:#F4F4F4;
 $innercolor: #EEEDEB;
 $title-text-size: 4vw;
+$band-font: 'Permanent Marker', cursive;
+$title-font: 'Lobster', cursive;
+$sub-font: 'Kalam', cursive;
+
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: $bkgcolor;
@@ -34,17 +42,27 @@ body{
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
+                a{
+                    text-decoration: none;
+                    width: 100%;
+                    height: 100%;
+                }
                 .card-title{
-                    width: 50%;
-                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
                     font-size: $title-text-size;
+                    font-family: $title-font;
+                    letter-spacing: 4px;
                     color: $bkgcolor;
-                    background-color: rgba($color: #000000, $alpha: .5);
+                    background-color: rgba($color: #000000, $alpha: .2);
                     font-weight:600;
                     text-shadow: 0px 0px 3px #000;
                 }
                 .card-title:hover{
-                    background-color: rgba($color: #000000, $alpha: .8);
+                    background-color: rgba($color: #000000, $alpha: .5);
                 }
             }
             #shows{
@@ -81,11 +99,9 @@ body{
                 align-items: center;
                 background: url(https://cdn.pixabay.com/photo/2015/03/26/10/25/trees-691292_960_720.jpg);
                 background-size: cover;
-                cursor: pointer;
                 .card-title{
                     font-size: $title-text-size;
-                    font-weight:600;
-                    text-shadow: 0px 0px 3px #000;
+                    font-family: $band-font;
                     color: $bkgcolor;
                     text-align: center;
                 }
@@ -93,7 +109,7 @@ body{
             }
         }
         .sub-container{
-            margin: 2vh 10vw;
+            margin: 7vh 10vw;
             width: 80vw;   
             display: flex;
             flex-direction: column;
@@ -101,6 +117,8 @@ body{
             align-items: center;
     
             .sub-title{
+                font-size: $title-text-size;
+                font-family: $sub-font;
                 border-bottom:black 2px solid;
             }
     
@@ -117,6 +135,7 @@ body{
             }
         }
         .bottom-container{
+            font-family: $sub-font;
             width: 100%;
             margin: 2vh 10vw;
             display: flex;
@@ -128,6 +147,7 @@ body{
                 justify-content: center;
                 align-items: center;
                 width: 80vw;
+                padding: 30px;
                 list-style: none;
                 border: rgb(255, 255, 255) 15px solid;
                 box-shadow: 0 4px 5px -6px black;

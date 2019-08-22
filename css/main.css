@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F4F4F4;
 }
@@ -60,18 +64,35 @@ body .container .front-container .card {
   cursor: pointer;
 }
 
+body .container .front-container .card a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
 body .container .front-container .card .card-title {
-  width: 50%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
   font-size: 4vw;
+  font-family: "Lobster", cursive;
+  letter-spacing: 4px;
   color: #F4F4F4;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   font-weight: 600;
   text-shadow: 0px 0px 3px #000;
 }
 
 body .container .front-container .card .card-title:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 body .container .front-container #shows {
@@ -114,19 +135,17 @@ body .container .front-container .card-center {
           align-items: center;
   background: url(https://cdn.pixabay.com/photo/2015/03/26/10/25/trees-691292_960_720.jpg);
   background-size: cover;
-  cursor: pointer;
 }
 
 body .container .front-container .card-center .card-title {
   font-size: 4vw;
-  font-weight: 600;
-  text-shadow: 0px 0px 3px #000;
+  font-family: "Permanent Marker", cursive;
   color: #F4F4F4;
   text-align: center;
 }
 
 body .container .sub-container {
-  margin: 2vh 10vw;
+  margin: 7vh 10vw;
   width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +163,8 @@ body .container .sub-container {
 }
 
 body .container .sub-container .sub-title {
+  font-size: 4vw;
+  font-family: "Kalam", cursive;
   border-bottom: black 2px solid;
 }
 
@@ -167,6 +188,7 @@ body .container .sub-container .icons img {
 }
 
 body .container .bottom-container {
+  font-family: "Kalam", cursive;
   width: 100%;
   margin: 2vh 10vw;
   display: -webkit-box;
@@ -192,6 +214,7 @@ body .container .bottom-container .tour-dates {
       -ms-flex-align: center;
           align-items: center;
   width: 80vw;
+  padding: 30px;
   list-style: none;
   border: white 15px solid;
   -webkit-box-shadow: 0 4px 5px -6px black;

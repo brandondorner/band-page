@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Band</title>
     <link rel="stylesheet" href="css/main.css" > 
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Lobster|Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -15,14 +16,16 @@
                     Bio
                 </div>
             </div>
+            <div class="card" id='shows'>
+                <a href="#tour">
+                    <div class="card-title" >
+                        Shows
+                    </div>
+                </a>
+            </div>
             <div class="card" id="photos">
                 <div class="card-title">
                     Photos
-                </div>
-            </div>
-            <div class="card" id='shows'>
-                <div class="card-title" >
-                    Shows
                 </div>
             </div>
             <div class="card" id="store">
@@ -32,19 +35,19 @@
             </div>
             <div class="card-center">
                 <div class="card-title">
-                    Generic Indie Band
+                    Fist Fight
                 </div>
             </div>
         </div>
         <div class="sub-container">
             <h2 class="sub-title">Listen</h4>
             <div class="icons">
-                <img src="spotify.svg" alt="spotify">
-                <img src="soundcloud.svg" alt="soundcloud">
+                <img src="spotify.svg" alt="spotify" onclick=" window.open('https://spotify.com','_blank')">
+                <img src="soundcloud.svg" alt="soundcloud" onclick=" window.open('https://soundcloud.com','_blank')">
             </div>
         </div>
         <div class="bottom-container">
-            <div class="tour-dates">
+            <div class="tour-dates" id="tour">
                 <h2>Tour Dates</h2>
                 <div class="date">
                     <li>New Orleans, LA<div>October 8th</div></li>
