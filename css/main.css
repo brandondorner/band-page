@@ -37,7 +37,7 @@ body .container .front-container {
       flex-wrap: wrap;
   background-color: #EEEDEB;
   border: white solid 15px;
-  height: 60vw;
+  height: 90vh;
   width: 80vw;
   -webkit-box-shadow: 0 4px 5px -6px black;
           box-shadow: 0 4px 5px -6px black;
@@ -70,6 +70,10 @@ body .container .front-container .card .card-title {
   text-shadow: 0px 0px 3px #000;
 }
 
+body .container .front-container .card .card-title:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 body .container .front-container #shows {
   background: url(https://images.pexels.com/photos/878998/pexels-photo-878998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   background-size: cover;
@@ -81,7 +85,7 @@ body .container .front-container #bio {
   background-position: center;
 }
 
-body .container .front-container #merch {
+body .container .front-container #store {
   background: url(https://live.staticflickr.com/2371/2356320632_0f10fa447e_b.jpg);
   background-position: center;
 }
@@ -95,8 +99,8 @@ body .container .front-container #photos {
 body .container .front-container .card-center {
   position: absolute;
   border-radius: 50%;
-  height: 30vw;
-  width: 30vw;
+  height: 23vw;
+  width: 23vw;
   z-index: 1;
   border: white 5px solid;
   display: -webkit-box;
@@ -137,7 +141,6 @@ body .container .sub-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: black solid 1px;
 }
 
 body .container .sub-container .sub-title {
@@ -156,6 +159,11 @@ body .container .sub-container .icons {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+body .container .sub-container .icons img {
+  width: 15vw;
+  cursor: pointer;
 }
 
 body .container .bottom-container {
@@ -188,5 +196,45 @@ body .container .bottom-container .tour-dates {
   border: white 15px solid;
   -webkit-box-shadow: 0 4px 5px -6px black;
           box-shadow: 0 4px 5px -6px black;
+}
+
+body .container .bottom-container .tour-dates h2 {
+  border-bottom: black 2px solid;
+}
+
+body .container .bottom-container .tour-dates .date {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px black solid;
+  text-align: left;
+}
+
+body .container .bottom-container .tour-dates .date li {
+  width: 90%;
+  margin: 7px;
+}
+
+@media (max-width: 950px) {
+  body .container .front-container {
+    height: 50vh;
+  }
+  body .container .front-container .card .card-title {
+    font-size: 3vh;
+    width: 80%;
+  }
+  body .container .front-container .card-center {
+    width: 20vh;
+    height: 20vh;
+  }
+  body .container .front-container .card-center .card-title {
+    font-size: 3vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

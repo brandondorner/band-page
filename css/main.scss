@@ -20,7 +20,7 @@ body{
             flex-wrap: wrap;
             background-color: $innercolor;
             border: white solid 15px;  
-            height: 60vw;
+            height: 90vh;
             width: 80vw;   
             box-shadow: 0 4px 5px -6px black;
        
@@ -42,7 +42,9 @@ body{
                     background-color: rgba($color: #000000, $alpha: .5);
                     font-weight:600;
                     text-shadow: 0px 0px 3px #000;
-
+                }
+                .card-title:hover{
+                    background-color: rgba($color: #000000, $alpha: .8);
                 }
             }
             #shows{
@@ -56,7 +58,7 @@ body{
                 background-position: center;
             }
 
-            #merch{
+            #store{
                 background: url(https://live.staticflickr.com/2371/2356320632_0f10fa447e_b.jpg);
                 background-position: center;
             }
@@ -70,8 +72,8 @@ body{
             .card-center{
                 position: absolute;
                 border-radius: 50%;
-                height: 30vw;
-                width: 30vw;
+                height: 23vw;
+                width: 23vw;
                 z-index: 1;
                 border: white 5px solid;
                 display: flex;
@@ -87,6 +89,7 @@ body{
                     color: $bkgcolor;
                     text-align: center;
                 }
+
             }
         }
         .sub-container{
@@ -96,7 +99,6 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: black solid 1px;
     
             .sub-title{
                 border-bottom:black 2px solid;
@@ -107,6 +109,11 @@ body{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
+
+                img{
+                    width: 15vw;
+                    cursor: pointer;
+                }
             }
         }
         .bottom-container{
@@ -124,6 +131,25 @@ body{
                 list-style: none;
                 border: rgb(255, 255, 255) 15px solid;
                 box-shadow: 0 4px 5px -6px black;
+
+                h2{
+                    border-bottom:black 2px solid;
+                }
+
+                .date{
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-bottom: 1px black solid;
+                    text-align: left;
+                    li{
+                        width: 90%;
+                        margin: 7px;
+                    }
+                }
+
+
             }
         }
     }
@@ -131,3 +157,25 @@ body{
     
 }
 
+@media (max-width: 950px){
+        body{
+            .container{
+                    .front-container{
+                        height: 50vh;
+                        .card{
+                            .card-title{
+                                font-size: 3vh;
+                                width: 80%;
+                            }
+                        }
+                        .card-center{
+                            width: 20vh;
+                            height: 20vh;
+                            .card-title{
+                                font-size: 3vh;
+                            }
+                        }
+                    }
+            }
+        }
+}
